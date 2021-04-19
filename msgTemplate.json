@@ -1,0 +1,17 @@
+{
+  "firstMsg": "EZZZER",
+  "secondMsg": "BUDDHA BELL",
+  "font":"Dead Kansas",
+  "size": "32",
+  "r":"255",
+  "g":"255",
+  "b":"255",
+  "time":"7",
+  "fade":"1",
+  "growth":"3",
+  "randx":"0.0",
+  "randy":"0.0",
+  "randr":"255",
+  "randg":"255",
+  "randb":"255"
+}

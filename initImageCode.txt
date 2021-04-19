@@ -1,0 +1,21 @@
+img
+\anim{1}.png
+init
+g_blendmode = {blendMode};
+x = {initialX};
+y = {initialY};
+sx = {initialSX};
+sy = {initialSY};
+code
+g_Time = time/10;
+g_sound = {sound};
+g_currentFrame = {frameSpeed};
+g_scale{1} = {scale};
+g_a = 1*min(1,max(0,  g_sound ));
+g_rot = {rot};
+g_sx = {sx};
+g_sy = {sy};
+g_a = a{1};
+g_x = 0.5+sin(g_Time)/5
+g_y = {y};
+burn = 1;

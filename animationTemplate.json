@@ -1,0 +1,5 @@
+{
+  "numberOfImages": 15,
+  "imgFileLocation": "D:\\MakingMusic\\Automatic Music Machine\\Images",
+  "frameSpeed": "(1-sin(time))*{numberOfImages}"
+}

@@ -1,0 +1,23 @@
+img
+D:\MakingMusic\Automatic Music Machine\Images\anim{1}.png
+init
+x = 0.5;
+y = 0.5;
+numberOfImages = 15;
+blendmode = 4;
+scale = 0.25;
+code
+prevAudio_{1} = audio_{1};
+audio_{1} = bass_att;
+change = audio_{1} - prevAudio_{1};
+bit_{1} = above(change,0.1);
+counter_{1} = counter_{1} + bit_{1};
+rot = 0;
+scale = scale + bit_{1}*0.04*bass_att - 0.002;
+scale = if(above(scale,0.3),0.3,scale);
+scale = if(below(scale,0.03),0.03,scale);
+sx = scale;
+sy = sx;
+a = equal(counter_{1}%numberOfImages,{1});
+burn = 1;
+

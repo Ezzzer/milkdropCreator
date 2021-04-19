@@ -1,0 +1,29 @@
+img
+{imgFileLocation}\anim{1}.png
+init
+blendmode = 4;
+counter=0.0;
+highBass= 10.0;
+minBass = 50.0;
+lowBass = 0.0;
+bassDelta = 0.0;
+m = 0.0;
+bit = -1.0;
+lastBit = -1.0;
+code
+audio = 0;
+bit = below(bit,0.0) * above(audio,highBass) - above(bit,0.0)*below(audio,lowBass);
+highBass = if(above(bit,0),audio,highBass);
+highBass = if(above(bit,0),if(above(highBass,minBass),highBass,minBass),highBass);
+lowBass = below(bit,0) * (0) + above(bit,0)*lowBass;
+m = if(equal(bit,0),0,(1-equal(lastBit,bit));
+counter = counter + m;
+lastBit = if(equal(bit,0),lastBit,bit);
+rot = 0;
+sx = above(bass_att,3)*bass_att*0.02+ below(bass_att,3)*bass_att*0.15;
+sy = sx;
+a = equal(counter%({numberOfImages}),{1});
+x = 0.5;
+y = 0.5;
+burn = a;
+monitor=highBass;
